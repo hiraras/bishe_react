@@ -10,7 +10,7 @@ class App extends Component{
             <BrowserRouter>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route path='/Bar' component={Bar} />
+                    <Route path='/bar' component={Bar} />
                 </Switch>
             </BrowserRouter>
         );
@@ -18,4 +18,3 @@ class App extends Component{
 }
 
 export default App;
-

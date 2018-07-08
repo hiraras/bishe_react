@@ -1,5 +1,5 @@
-import Color from './color';
+import GlobalHeader from './GlobalHeader';
 
 export {
-    Color,
+    GlobalHeader
 }
