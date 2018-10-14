@@ -1,0 +1,83 @@
+@import '../../utils/utils.less';
+
+.container{
+    position: relative;
+    .imgCtn{
+        position: relative;
+        overflow: hidden;
+        .imgItem{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+            &:first-child{
+                left: -100%;
+            }
+            &:last-child{
+                left: 100%;
+            }
+        }
+        .toFront,.toNext{
+            transition: left 0.5s;
+            left: 0 !important;
+            z-index: 10;
+        }
+    }
+    .spotCtn{
+        position: absolute;
+        z-index: 1000;
+        top: 260px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
+        .spot{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background-color: #fff;
+            margin-right: 10px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .activeSpot{
+            background-color: red;
+        }
+    }
+    .btnCtn{
+        position: absolute;
+        z-index: 1001;
+        height: 36px;
+        width: 100%;
+        margin: auto 0;
+        top: 50%;
+        .adjustPosition{
+            position: absolute;
+            top: -50%;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .changePosterBtn{
+            color: #fff;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            line-height: 36px;
+            border: none;
+            background-color: rgba(0, 0, 0, .8);
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+}
