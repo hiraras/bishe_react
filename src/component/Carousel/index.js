@@ -62,7 +62,6 @@ class Carousel extends Component {
 
     changeImgHandler = nextIndex => {
         const { currImgIndex } = this.state;
-        const { imgList } = this.props;
         let direct;
         this.clearAllInterval();
         if(currImgIndex === nextIndex){

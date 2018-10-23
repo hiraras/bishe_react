@@ -1,0 +1,31 @@
+@import '../../utils/utils.less';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    & > *{
+        margin-right: 8px;
+    }
+    & > *:last-child{
+        margin-right: 0;
+    }
+    .input{
+        display: inline-block;
+        width: 252px;
+        height: 26px;
+        border-radius: 6px;
+    }
+    .searchBtn{
+        width: 60px;
+        height: 40px;
+        .searchImg{
+            width: 28px;
+            height: 28px;
+        }
+    }
+    .disabledBtn{
+        background-color: @MyGray;
+    }
+}
