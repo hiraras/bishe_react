@@ -1,9 +1,11 @@
 import Home from './Home';
 import Bar from './Bar';
-import Test from './Test';
+import { Drag, FetchJsonp, MD5 } from './Test';
 
 export {
     Home,
     Bar,
-    Test,
+    Drag,
+    FetchJsonp,
+    MD5,
 }
